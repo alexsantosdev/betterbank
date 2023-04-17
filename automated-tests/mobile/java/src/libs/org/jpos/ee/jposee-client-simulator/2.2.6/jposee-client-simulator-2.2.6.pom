@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.jpos.ee</groupId>
+  <artifactId>jposee-client-simulator</artifactId>
+  <version>2.2.6</version>
+  <name>jPOS-EE Project</name>
+  <description>
+    jPOS Extended Edition
+  </description>
+  <url>http://jpos.org</url>
+  <inceptionYear>1998</inceptionYear>
+  <organization>
+    <name>jPOS.org</name>
+    <url>http://jpos.org</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>GNU AFFERO GENERAL PUBLIC LICENSE</name>
+      <url>http://www.gnu.org/licenses/agpl-v3.html</url>
+      <distribution>repo</distribution>
+      <comments>See http://jpos.org/license for more details.</comments>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>jpos-team</id>
+      <name>jPOS Development Team</name>
+      <email>info@jpos.org</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:https://github.com/jpos/jPOS-EE.git</connection>
+    <developerConnection>scm:git:git@github.com:jpos/jPOS-EE.git</developerConnection>
+    <url>http://github.com/jpos/jPOS</url>
+  </scm>
+  <issueManagement>
+    <system>YouTrack</system>
+    <url>https://jpos.org/issues</url>
+  </issueManagement>
+  <dependencies>
+    <dependency>
+      <groupId>org.jpos.ee</groupId>
+      <artifactId>jposee-core</artifactId>
+      <version>2.2.6</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.bind</groupId>
+      <artifactId>jaxb-impl</artifactId>
+      <version>2.1.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.activation</groupId>
+      <artifactId>javax.activation</artifactId>
+      <version>1.2.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.xml.bind</groupId>
+      <artifactId>jaxb-api</artifactId>
+      <version>2.3.0</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
