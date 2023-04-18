@@ -8,11 +8,11 @@ class LoginPage extends Page {
     }
 
     public get inputAccount () {
-        return $('~test:id/user_account');
+        return $('.android.widget.EditText');
     }
 
     public get btnSubmit () {
-        return $('~test:id/login_button');
+        return $('android.widget.Button');
     }
 
     async isLoginButtonDisplayed() {
