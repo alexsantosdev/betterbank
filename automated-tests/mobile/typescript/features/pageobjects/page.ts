@@ -1,13 +1,18 @@
-/**
-* main page object containing all methods, selectors and functionality
-* that is shared across all page objects
-*/
 export default class Page {
+    private selector: string;
+
+    constructor (selector: string) {
+        this.selector = selector;
+    }
+
     /**
-    * Opens a sub page of the page
-    * @param path path of the sub page (e.g. /path/to/page.html)
-    */
-    public open (path: string) {
-        return browser.url(`https://the-internet.herokuapp.com/${path}`)
+     * Wait for the login screen to be visible
+     *
+     * @param {boolean} isShown
+     */
+    async waitForIsShown (isShown = true): Promise<boolean | void> {
+        return $(this.selector).waitForDisplayed({
+            reverse: !isShown,
+        });
     }
 }

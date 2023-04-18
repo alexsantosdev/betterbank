@@ -1,18 +1,14 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
 
-import LoginPage from '../pageobjects/login.page';
-import SecurePage from '../pageobjects/secure.page';
-
-const pages = {
-    login: LoginPage
-}
+import LoginPage from '../pageobjects/login.page.ts'
+import SecurePage from '../pageobjects/secure.page.ts';
 
 Given(/^I am on the (\w+) page$/, async (page) => {
-    await pages[page].open()
+    await LoginPage.isLoginButtonDisplayed()
 });
 
-When(/^I login with (\w+) and (.+)$/, async (username, password) => {
-    await LoginPage.login(username, password)
+When(/^I login with (\w+)$/, async (account: string) => {
+    await LoginPage.login(account)
 });
 
 Then(/^I should see a flash message saying (.*)$/, async (message) => {

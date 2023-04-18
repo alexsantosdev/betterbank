@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "moduleResolution": "node",
-        "module": "commonjs",
+        "module": "ES2022",
         "types": [
             "node",
             "@wdio/globals/types",

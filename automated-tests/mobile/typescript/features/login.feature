@@ -1,12 +1,11 @@
-Feature: The Internet Guinea Pig Website
+Feature: The BetterBank app functionalities
 
-  Scenario Outline: As a user, I can log into the secure area
+  Scenario Outline: As a user, I can log into the application
 
     Given I am on the login page
-    When I login with <username> and <password>
+    When I login with <account>
     Then I should see a flash message saying <message>
 
     Examples:
-      | username | password             | message                        |
-      | tomsmith | SuperSecretPassword! | You logged into a secure area! |
-      | foobar   | barfoo               | Your username is invalid!      |
+      | account | message                        |
+      | 123456  | You logged into a secure area! |
